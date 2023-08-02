@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-sala-dental',
+  selector: 'sala-bbdental',
   templateUrl: './sala-dental.component.html',
   styleUrls: ['./sala-dental.component.css']
 })

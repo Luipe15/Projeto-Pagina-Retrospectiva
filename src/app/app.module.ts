@@ -4,17 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SalaDentalComponent } from './sala-dental/sala-dental.component';
-import { CardsComponent } from './cards/cards.component';
+import { RoomsComponent } from './Rooms/rooms.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SalaDentalComponent,
-    CardsComponent,
+    RoomsComponent,
+    LoginComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
 
   ],
   providers: [],
