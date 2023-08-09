@@ -1,0 +1,44 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  text-align: center;
+}
+
+.column {
+  padding: 10px;
+  flex: 50%;
+  height: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 300px;
+}
+
+#card-positivo {
+  background-color: #7fd8f4;
+}
+
+#card-negativo {
+  background-color: #ed5a5a;
+}
+
+#card-melhorias {
+  background-color: #fafd82;
+}
+
+.column:nth-child(1) {
+  border-right: 1px solid black;
+}
+
+.column:nth-child(3) {
+  border-left: 1px solid black;
+}
