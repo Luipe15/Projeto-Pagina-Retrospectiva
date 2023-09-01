@@ -1,21 +1,16 @@
 .cards {
   display: flex;
-  flex-direction: row;
-  font-size: 15px;
-  text-align: center;
+  width: 100%;
+  text-align: -webkit-center;
 }
 
 .column {
-  padding: 10px;
   flex: 50%;
-  height: 8rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: center;
 }
 
-.card {
+.cardP,
+.cardN,
+.cardM {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
@@ -23,16 +18,31 @@
   width: 300px;
 }
 
+.cardP {
+  background-color: #7fd8f4;
+}
+
+.cardN {
+  background-color: #ed5a5a;
+}
+
+.cardM {
+  background-color: #fafd82;
+}
+
 #card-positivo {
   background-color: #7fd8f4;
+  border-radius: 5px;
 }
 
 #card-negativo {
   background-color: #ed5a5a;
+  border-radius: 5px;
 }
 
-#card-melhorias {
+#card-melhoria {
   background-color: #fafd82;
+  border-radius: 5px;
 }
 
 .column:nth-child(1) {

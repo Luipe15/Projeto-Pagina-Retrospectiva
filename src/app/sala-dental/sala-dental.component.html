@@ -1,24 +1,41 @@
 <div class="cards">
   <div class="column">
-    <div class="card">Positivos</div>
+    <div class="cardP">Positivos</div>
     <div id="card-positivo">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisl
-      fringilla, viverra leo quis.
+      <input [(ngModel)]="cardPositivoText" placeholder="Entre com o seu texto" />
+      <button (click)="createCardP()">Criando o card</button>
+    </div>
+    <div *ngFor="let cardP of cardsPositivos" id="card-positivo">
+      <div class="card-content">
+        <p>{{ cardP.text }}</p>
+        <button (click)="upvoteP(cardP)">Votar</button>
+      </div>
     </div>
   </div>
   <div class="column">
-    <div class="card">Negativos</div>
+    <div class="cardN">Negativos</div>
     <div id="card-negativo">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisl
-      fringilla, viverra leo quis. 1 
+      <input [(ngModel)]="cardNegativoText" placeholder="Entre com o seu texto" />
+      <button (click)="createCardN()">Criando o card</button>
     </div>
-  
+    <div *ngFor="let cardN of cardsNegativos" id="card-negativo">
+      <div class="card-content">
+        <p>{{ cardN.text }}</p>
+        <button (click)="upvoteP(cardN)">Votar</button>
+      </div>
+    </div>
   </div>
   <div class="column">
-    <div class="card">Melhorias</div>
-    <div id="card-melhorias">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisl
-      fringilla, viverra leo quis.
+    <div class="cardM">Melhorias</div>
+    <div id="card-melhoria">
+      <input [(ngModel)]="cardMelhoriaText" placeholder="Entre com o seu texto" />
+      <button (click)="createCardM()">Criando o card</button>
+    </div>
+    <div *ngFor="let card of cardsMelhorias" id="card-melhoria">
+      <div class="card-content">
+        <p>{{ card.text }}</p>
+        <button (click)="upvoteP(card)">Votar</button>
+      </div>
     </div>
   </div>
 </div>

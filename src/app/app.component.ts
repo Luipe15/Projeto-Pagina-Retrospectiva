@@ -4,45 +4,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css','../../materialize/css/materialize.css']
+  styleUrls: ['./app.component.css', '../../materialize/css/materialize.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  // constructor(private router: Router) { }
+  constructor(private router: Router) { }
 
-  // ngOnInit() {
-  //   const Bbdental = document.getElementById('bb-dental')!;
-  //   const Bb = document.getElementById('bb')!;
-  //   const Alelo = document.getElementById('alelo')!;
-  //   const Diretoria = document.getElementById('diretoria')!;
-  //   const Fabrica = document.getElementById('fabrica')!;
+  ngOnInit(): void {
 
-
-  //   Bbdental.addEventListener('click', (button) => {
-  //     console.log("teste");
-  //     void this.router.navigate(['/sala-bbdental'])
-  //   });
-
-  //   Bb.addEventListener('click', (button) => {
-  //     console.log("teste");
-  //   });
-  //   Alelo.addEventListener('click', (button) => {
-  //     console.log("teste");
-  //   });
-
-  //   Diretoria.addEventListener('click', (button) => {
-  //     console.log("teste");
-  //   });
-
-  //   Fabrica.addEventListener('click', (button) => {
-  //     console.log("teste");
-  //   });
-
-
-
-  // }
-
-
+  }
 }
 
 
