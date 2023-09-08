@@ -52,3 +52,7 @@
 .column:nth-child(3) {
   border-left: 1px solid black;
 }
+
+#votacao {
+  text-align: right;
+}

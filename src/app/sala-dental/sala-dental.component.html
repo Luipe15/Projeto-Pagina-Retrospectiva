@@ -2,20 +2,28 @@
   <div class="column">
     <div class="cardP">Positivos</div>
     <div id="card-positivo">
-      <input [(ngModel)]="cardPositivoText" placeholder="Entre com o seu texto" />
+      <input
+        [(ngModel)]="cardPositivoText"
+        placeholder="Entre com o seu texto"
+      />
       <button (click)="createCardP()">Criando o card</button>
     </div>
     <div *ngFor="let cardP of cardsPositivos" id="card-positivo">
       <div class="card-content">
         <p>{{ cardP.text }}</p>
-        <button (click)="upvoteP(cardP)">Votar</button>
+        <p id="votacao">
+          {{ cardP.upvotes }}<button (click)="upvoteP(cardP)">Votar</button>
+        </p>
       </div>
     </div>
   </div>
   <div class="column">
     <div class="cardN">Negativos</div>
     <div id="card-negativo">
-      <input [(ngModel)]="cardNegativoText" placeholder="Entre com o seu texto" />
+      <input
+        [(ngModel)]="cardNegativoText"
+        placeholder="Entre com o seu texto"
+      />
       <button (click)="createCardN()">Criando o card</button>
     </div>
     <div *ngFor="let cardN of cardsNegativos" id="card-negativo">
@@ -28,7 +36,10 @@
   <div class="column">
     <div class="cardM">Melhorias</div>
     <div id="card-melhoria">
-      <input [(ngModel)]="cardMelhoriaText" placeholder="Entre com o seu texto" />
+      <input
+        [(ngModel)]="cardMelhoriaText"
+        placeholder="Entre com o seu texto"
+      />
       <button (click)="createCardM()">Criando o card</button>
     </div>
     <div *ngFor="let card of cardsMelhorias" id="card-melhoria">
