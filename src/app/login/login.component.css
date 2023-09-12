@@ -1,3 +1,4 @@
-button {
-    align-items: center;
+.content {
+  background-color: grey;
+  border-radius: 4px
 }
